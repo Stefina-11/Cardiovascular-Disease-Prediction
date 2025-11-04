@@ -6,7 +6,7 @@ export async function POST(request: Request) {
     const formData: CardioFormData = await request.json();
     console.log("Received form data:", formData);
 
-    const backendResponse = await fetch("http://localhost:5001/predict", {
+    const backendResponse = await fetch("http://localhost:5000/predict", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
